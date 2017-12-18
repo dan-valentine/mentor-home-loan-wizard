@@ -10,7 +10,7 @@ class WizardOne extends Component {
         <div className="vert-align">
           <p>What type of loan will you be needing?</p> <br />
 
-          <select onChange={(e) => { updateLoanType(e.target.value); }}>
+          <select onChange={(e) => { this.props.updateLoanType(e.target.value); }}>
 
             <option type="text" value="Home Purchase" >Home Purchase</option>
             <option type="text" value="Refinance" >Refinance</option>
@@ -20,7 +20,7 @@ class WizardOne extends Component {
 
           <p>What type of property are you purchasing?</p> <br />
 
-          <select onChange={(e) => { updatePropertyType(e.target.value); }}>
+          <select onChange={(e) => { this.props.updatePropertyType(e.target.value); }}>
 
             <option value="Single Family Home">Single Family Home</option>
             <option value="Town Home">Townhome</option>
